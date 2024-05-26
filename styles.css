@@ -59,3 +59,9 @@ body, .time, .leftside, .rightside, .day, .date{
     background-color: rgb(40, 55, 152);
     border-radius: 5px,5px,20px, 20px;
 }
+.author{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-left: 15rem;
+    color: brown;
+}
