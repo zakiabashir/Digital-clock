@@ -34,11 +34,11 @@ console.log(time);
 let h:number | string = time.getHours();
 let m:number | string = time.getMinutes();
 let s:number | string = time.getSeconds();
-let d:number | string = time.getDay();
+let d = time.getDay();
 let dd = time.getDate();
 let mm = time.getMonth();
 let yy = time.getFullYear();
-let ampm = h>=12 ? "AM" : "PM"
+let ampm = h >=12 ? "PM" : "AM"
 if(h > 12) {
     h = h-12;
 }
@@ -110,6 +110,7 @@ setInterval(clock, 1000);
 //     h = h < 10 ? "0" + h : h;
 //     m = m < 10 ? "0" + m : m;
 //     s = s < 10 ? "0" + s : s;
+
   
 //     hrs.innerHTML = h;
 //     mins.innerHTML = m;
