@@ -36,15 +36,15 @@ function clock() {
     var dd = time.getDate();
     var mm = time.getMonth();
     var yy = time.getFullYear();
-    var ampm = h >= 12 ? "AM" : "PM";
+    var ampm = h >= 12 ? "PM" : "AM";
     if (h > 12) {
         h = h - 12;
     }
     if (h == 0) {
         h = 12;
     }
-    h = h <= 10 ? "0" + h : h;
-    m = m <= 10 ? "0" + m : m;
+    h = h < 10 ? "0" + h : h;
+    m = m < 10 ? "0" + m : m;
     s = s < 10 ? "0" + s : s;
     hrs.innerHTML = h;
     min.innerHTML = m;
